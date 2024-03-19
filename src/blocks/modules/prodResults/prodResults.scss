@@ -1,0 +1,61 @@
+.prodResults__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.greenCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #F7F7F6;
+    background-color: #646B5C;
+    border-radius: 5px;
+    padding: 32px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.greenCard::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-image: url('../img/greenCardFlower.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+}
+
+
+.greenCard__num {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.greenCard__p {
+    font-size: 20px;
+}
+
+@media(max-width:767px) {
+    .prodResults__body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .greenCard__num {
+        font-size: 22px;
+    }
+
+    .greenCard__p {
+        font-size: 16px;
+    }
+
+    .greenCard {
+        padding: 20px;
+    }
+}

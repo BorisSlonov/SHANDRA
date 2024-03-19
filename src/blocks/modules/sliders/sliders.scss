@@ -1,0 +1,58 @@
+.swiperBtns {
+    position: relative;
+    margin-top: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiperBtns div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #3A4143;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #F6F6F6;
+    font-size: 16px;
+}
+
+.swiperSlideImgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiperSlideImgWrapper img {
+    display: block;
+    width: 100%;
+    max-width: fit-content;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+.swiperReviews img {
+    height: 450px;
+}
+
+.swiperReviews__btns {
+    position: relative;
+}
+
+.swiperRegards__btns {
+    display: none;
+}
+
+@media(max-width:1023px) {
+    .swiperRegards__btns {
+        display: flex;
+    }
+}

@@ -1,0 +1,124 @@
+.anounce__body {
+    display: flex;
+}
+
+.anounce__item {
+    width: 100%;
+}
+
+.anounce__item_img {
+    background-image: url(../img/anons/anonsPhoto.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -10px;
+}
+
+.swiperAnounce {
+    width: 100%;
+    max-width: 620px;
+    margin: 0;
+}
+
+.anounceCard {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3A4143;
+    border-radius: 10px;
+    text-align: center;
+    color: #C9CDCA;
+    min-height: 620px;
+}
+
+.anounceCard__body {
+    margin-top: 48px;
+}
+
+.anounceCard__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.anounceCard__headerSpan {
+    padding: 8px;
+    border: 1px solid #C9CDCA;
+    border-radius: 10px;
+}
+
+.anounceCard__h3 {
+    position: relative;
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+.anounceCard__h3::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-image: url('../img/anons/h3_icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 41px;
+}
+
+.anounceCard__p {
+    margin-top: 12px;
+}
+
+.anounceCard__footer {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media(max-width:767px) {
+    .anounceCard {
+        min-height: 400px;
+    }
+
+    .anounceCard__body {
+        margin-top: 32px;
+    }
+
+    .anounce__body {
+        flex-direction: column-reverse;
+    }
+
+    .anounce__item_img {
+        margin-left: 0;
+        min-height: 320px;
+        border-radius: 10px;
+        margin-bottom: -10px;
+    }
+
+    .anounceCard__h3 {
+        font-size: 18px;
+    }
+
+    .anounceCard__p {
+        font-size: 14px;
+    }
+
+    .anounceCard__header {
+        flex-direction: column;
+    }
+
+    .anounceCard__headerSpan {
+        font-size: 14px;
+    }
+
+    .anounceCard__footer {
+        padding-top: 42px;
+    }
+
+
+}

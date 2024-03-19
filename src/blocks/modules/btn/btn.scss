@@ -1,0 +1,52 @@
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    padding: 24px 36px;
+    transition: all .3s;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_fill {
+    background: #414733;
+    color: #efefef;
+    border: 1px solid #414733;
+}
+
+.btn_fillLight {
+    background: #C9CDCA;
+    color: #3A4143;
+    border: 1px solid #C9CDCA;
+}
+
+.btn_strokeLight {
+    background: transparent;
+    color: #C9CDCA;
+    border: 1px solid #C9CDCA;
+}
+
+.btn_stroke {
+    background: transparent;
+    color: #454545;
+    border: 1px solid #454545;
+}
+
+.btn_fill:hover {
+    color: #414733;
+    background-color: #efefef;
+}
+
+.btn_stroke:hover {
+    background-color: #414733;
+    color: #efefef;
+}
+
+@media(max-width:767px) {
+    .btn {
+        font-size: 16px;
+        padding: 20px;
+    }
+}

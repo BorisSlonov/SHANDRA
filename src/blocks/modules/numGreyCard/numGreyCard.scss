@@ -1,0 +1,130 @@
+.numGreyCard {
+    background-color: #434343;
+    padding: 34px;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #f7f7f6;
+    height: 167px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiperProducts .numGreyCard:not(:first-child) {
+    margin-top: 40px;
+}
+
+.numGreyCard__p {
+    position: relative;
+    padding-top: 40px;
+}
+
+.numGreyCard__p::before {
+    content: '';
+    font-size: 42px;
+    top: -20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.numGreyCard__p_1::before {
+    content: '1'
+}
+
+.numGreyCard__p_2::before {
+    content: '2'
+}
+
+.numGreyCard__p_3::before {
+    content: '3'
+}
+
+.numGreyCard__p_4::before {
+    content: '4'
+}
+
+.numGreyCard__p_5::before {
+    content: '5'
+}
+
+.numGreyCard__p_6::before {
+    content: '6'
+}
+
+.numGreyCard__p_7::before {
+    content: '7'
+}
+
+.numGreyCard__p_8::before {
+    content: '8'
+}
+
+.numGreyCard__p_9::before {
+    content: '9'
+}
+
+.numGreyCard__p_10::before {
+    content: '10'
+}
+
+.numGreyCard__p_11::before {
+    content: '11'
+}
+
+.numGreyCard__p_12::before {
+    content: '12'
+}
+
+@media(max-width:1239px) {
+    .numGreyCard {
+        height: 180px;
+    }
+
+    .numGreyCard__p::before {
+        font-size: 32px;
+        top: -15px;
+    }
+}
+
+@media(max-width:1023px) {
+    .numGreyCard {
+        height: 100%;
+        padding: 34px 16px;
+        font-size: 16px;
+    }
+
+    .numGreyCard__p_3::before {
+        content: '2'
+    }
+
+    .numGreyCard__p_5::before {
+        content: '3'
+    }
+
+    .numGreyCard__p_2::before {
+        content: '4'
+    }
+
+    .numGreyCard__p_4::before {
+        content: '5'
+    }
+
+    .numGreyCard__p_9::before {
+        content: '8'
+    }
+
+    .numGreyCard__p_11::before {
+        content: '9'
+    }
+
+    .numGreyCard__p_8::before {
+        content: '10'
+    }
+
+    .numGreyCard__p_10::before {
+        content: '11'
+    }
+}

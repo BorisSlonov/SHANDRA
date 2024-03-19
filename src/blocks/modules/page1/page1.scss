@@ -1,0 +1,48 @@
+.sectionPage1 {
+    position: relative;
+    padding-top: 175px;
+    padding-bottom: 700px;
+
+}
+
+.sectionPage1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 730px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.sectionPage1_index::after {
+    background-image: url('../img/1screen/index.png');
+}
+
+.sectionPage1_retreat {
+    padding-bottom: 450px;
+}
+
+.sectionPage1_retreat::after {
+    background-image: url('../img/1screen/retreat.png');
+}
+
+.page1__btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.page1 {
+    position: relative;
+
+    z-index: 10;
+}
+
+@media(max-width:1440px) {
+    .sectionPage1 {
+        padding-bottom: 600px;
+    }
+}

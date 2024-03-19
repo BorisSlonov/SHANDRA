@@ -1,4 +1,136 @@
-h1, h2, h3, h4, h5, h6, ul {
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Poiret One", sans-serif;
+    --third-family: "Denistina", sans-serif;
+    --font3: "Inter", sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 20px;
+    font-family: var(--font-family);
+    background-color: #f7f7f6;
+}
+
+button {
+    font-family: var(--font-family);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    opacity: .85;
+}
+
+::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #5c5c5c;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.app {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 75px 0;
+}
+
+.section_first {
+    padding-top: 150px;
+}
+
+.section_last {
+    padding-bottom: 150px;
+}
+
+@media(max-width:1023px) {
+    .section {
+        padding: 50px 0;
+    }
+
+    .section_first {
+        padding-top: 100px;
+    }
+
+    .section_last {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width:767px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .section_first {
+        padding-top: 80px;
+    }
+
+    .section_last {
+        padding-bottom: 80px;
+    }
+}
+
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mainTitle {
+    font-family: var(--second-family);
+    font-size: 86px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: #202020;
+    margin-bottom: 60px;
+}
+
+.mainTitle_light {
+    color: #f7f7f6;
+}
+
+.mainTitle__p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #202020;
+}
+
+@media(max-width:767px) {
+    .mainTitle {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mainTitle__p {
+        font-size: 18px;
+    }
+
+    .page1__btns {
+        flex-direction: column;
+    }
 }
