@@ -21,28 +21,66 @@
 }
 
 .servicesCard__item_img1 {
-    background-image: url('../img/services/1.png');
+    background-image: url('../img/services/1.webp');
 }
 
 .servicesCard__item_img2 {
-    background-image: url('../img/services/2.png');
+    background-image: url('../img/services/2.webp');
 }
 
 .servicesCard__item_img3 {
-    background-image: url('../img/services/3.png');
+    background-image: url('../img/services/3.webp');
 }
 
 .servicesCard__item_img4 {
-    background-image: url('../img/services/4.png');
+    background-image: url('../img/services/4.webp');
 }
 
 .servicesCard__item_img5 {
-    background-image: url('../img/services/5.png');
+    background-image: url('../img/services/5.webp');
 }
 
 .servicesCard__item_img6 {
-    background-image: url('../img/services/6.png');
+    background-image: url('../img/services/6.webp');
 }
+
+.servicesCard__item_img_meditation1 {
+    background-image: url('../img/services/meditation/1.webp');
+}
+
+.servicesCard__item_img_meditation2 {
+    background-image: url('../img/services/meditation/2.webp');
+}
+
+.servicesCard__item_img_meditationPac1 {
+    background-image: url('../img/services/meditation/pac1.webp');
+}
+
+.servicesCard__item_img_meditationPac2 {
+    background-image: url('../img/services/meditation/pac2.webp');
+}
+
+
+.servicesCard__item_img_meditationFromZero1 {
+    background-image: url('../img/services/fromZero/1.webp');
+}
+
+.servicesCard__item_img_meditationFromZero2 {
+    background-image: url('../img/services/fromZero/2.webp');
+}
+
+.servicesCard__item_img_meditationFromZero3 {
+    background-image: url('../img/services/fromZero/3.webp');
+}
+
+.servicesCard__item_img_meditationFromZero4 {
+    background-image: url('../img/services/fromZero/4.webp');
+}
+
+.servicesCard__item_img_meditationFromZero5 {
+    background-image: url('../img/services/fromZero/5.webp');
+}
+
 
 .servicesCard__item_content {
     display: flex;
@@ -53,6 +91,22 @@
     border-radius: 10px;
     background-color: #3A4143;
     color: #F7F7F6;
+}
+
+.servicesCard__item_content.servicesCard__item_contentGreen {
+    background-color: #414733;
+}
+
+.servicesCard__price {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    color: #c9cdca;
+    margin-top: 30px;
+
+    @media(max-width:767px) {
+        margin-top: 20px;
+    }
 }
 
 .servicesCard__h3 {
@@ -125,6 +179,38 @@
     margin-right: 6px;
 }
 
+.servicesCard__liTitleFlower {
+    font-weight: 500;
+    font-size: 24px;
+    color: #f7f7f6;
+    padding-left: 30px;
+
+    @media(max-width:767px) {
+        font-size: 16px;
+        padding-left: 30px !important;
+    }
+
+    &::before {
+        width: 22px;
+        height: 22px;
+
+        @media(max-width:767px) {
+            width: 16px !important;
+            height: 16px !important;
+            top: 0;
+        }
+
+    }
+
+    &:not(:first-child) {
+        margin-top: 20px;
+
+        @media(max-width:767px) {
+            margin-top: 10px;
+        }
+    }
+}
+
 @media(max-width:767px) {
     .servicesCard {
         flex-direction: column;
@@ -162,5 +248,28 @@
 
     .servicesCard__item_img {
         min-height: 220px;
+    }
+}
+
+.titleMedPac {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &_pc {
+        margin-bottom: 60px;
+
+        @media(max-width:767px) {
+            display: none;
+        }
+    }
+
+    &_mob {
+        display: none;
+
+        @media(max-width:767px) {
+            display: blcok;
+            margin-bottom: 30px;
+        }
     }
 }

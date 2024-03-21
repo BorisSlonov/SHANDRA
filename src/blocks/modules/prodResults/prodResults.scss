@@ -40,6 +40,12 @@
     font-size: 20px;
 }
 
+.greenCard_fromZeroCard {
+    background-image: url('../img/fromZeroCardPhoto.webp');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 @media(max-width:767px) {
     .prodResults__body {
         display: flex;

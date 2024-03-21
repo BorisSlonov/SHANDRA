@@ -17,7 +17,7 @@
 }
 
 .sectionPage1_index::after {
-    background-image: url('../img/1screen/index.png');
+    background-image: url('../img/1screen/index.webp');
 }
 
 .sectionPage1_retreat {
@@ -25,7 +25,32 @@
 }
 
 .sectionPage1_retreat::after {
-    background-image: url('../img/1screen/retreat.png');
+    background-image: url('../img/1screen/retreat.webp');
+}
+
+
+.sectionPage1_meditation {
+    padding-bottom: 500px;
+
+    @media(max-width:1230px) {
+        padding-bottom: 400px;
+    }
+}
+
+.sectionPage1_meditation::after {
+    background-image: url('../img/1screen/meditation.webp');
+}
+
+.sectionPage1_fromZero {
+    padding-bottom: 500px;
+
+    @media(max-width:1230px) {
+        padding-bottom: 400px;
+    }
+}
+
+.sectionPage1_fromZero::after {
+    background-image: url('../img/1screen/fromZero.webp');
 }
 
 .page1__btns {

@@ -20,6 +20,26 @@ var swiperReviews = new Swiper(".swiperReviews", {
     },
 });
 
+
+var swiperReviews = new Swiper(".swiperReviews_retreat", {
+    autoHeight: true,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".swiperReviewsRetreat__btns .swiper-button-next",
+        prevEl: ".swiperReviewsRetreat__btns .swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+});
+
 var swiperAnounce = new Swiper(".swiperAnounce", {
     effect: 'fade',
     autoHeight: true,
@@ -92,6 +112,22 @@ var swiperProducts = new Swiper(".swiperProducts", {
     navigation: {
         nextEl: ".swiperProducts__btns .swiper-button-next",
         prevEl: ".swiperProducts__btns .swiper-button-prev",
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+    },
+});
+
+
+var swiperProducts = new Swiper(".swiperHowGo", {
+    autoHeight: true,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".swiperHowGo__btns .swiper-button-next",
+        prevEl: ".swiperHowGo__btns .swiper-button-prev",
     },
     breakpoints: {
         1024: {
