@@ -41,6 +41,8 @@
     background-image: url('../img/1screen/meditation.webp');
 }
 
+
+
 .sectionPage1_fromZero {
     padding-bottom: 500px;
 
@@ -49,10 +51,10 @@
     }
 }
 
-.sectionPage1_consult::after {
+
+.sectionPage1_fromZero::after {
     background-image: url('../img/1screen/fromZero.webp');
 }
-
 
 .sectionPage1_consult {
     padding-bottom: 500px;

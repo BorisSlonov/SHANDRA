@@ -8005,6 +8005,8 @@ bem-tools-create@bem-tools/bem-tools-create:
     postcss-scss: "npm:^4.0.3"
     require-dir: "npm:^1.2.0"
     sass: "npm:^1.49.9"
+    scroll-out: "npm:^2.2.12"
+    splitting: "npm:^1.0.6"
     stylelint: "npm:^14.5.3"
     stylelint-config-standard-scss: "npm:^3.0.0"
     stylelint-order: "npm:^5.0.0"
@@ -13419,6 +13421,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"scroll-out@npm:^2.2.12":
+  version: 2.2.12
+  resolution: "scroll-out@npm:2.2.12"
+  checksum: 10c0/4e199a3a2581dac87856b14464b0a5d6f1f95eccf7b9c4c5c6ba4f6fb9eedf37c93de357948eb3a8d637cecdfc48af978c23ea9d7849c01793ba9a13bdb7c555
+  languageName: node
+  linkType: hard
+
 "seek-bzip@npm:^1.0.3, seek-bzip@npm:^1.0.5":
   version: 1.0.6
   resolution: "seek-bzip@npm:1.0.6"
@@ -14034,6 +14043,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   dependencies:
     extend-shallow: "npm:^3.0.0"
   checksum: 10c0/72d7cd625445c7af215130e1e2bc183013bb9dd48a074eda1d35741e2b0dcb355e6df5b5558a62543a24dcec37dd1d6eb7a6228ff510d3c9de0f3dc1d1da8a70
+  languageName: node
+  linkType: hard
+
+"splitting@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "splitting@npm:1.0.6"
+  checksum: 10c0/2a27ca2313457dc1972021b662db3ebf77c9ebcb9087c90f470ec73e3cb453d2dd6a76e5d6ffaef3a155fd39837ae92df21200aad8e7280379c2a6a00edc42d0
   languageName: node
   linkType: hard
 

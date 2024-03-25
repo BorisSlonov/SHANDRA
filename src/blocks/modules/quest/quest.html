@@ -1,17 +1,19 @@
 <section class="section section_last">
     <div class="questions">
         <div class="container">
-            <h2 class="mainTitle">Если остались вопросы?</h2>
+            <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">Если остались вопросы?</h2>
             <div class="questions__body">
-                <div class="questions__item questions__item_img">
+                <div class="questions__item questions__item_img scrollCheck" data-scroll="out">
                 </div>
                 <div class="questions__item">
-                    <form action="php/tg.php" class="questForm">
-                        <input class="mainInput" type="text" name="name" placeholder="Ваше имя">
-                        <input class="mainInput" type="text" name="phone" placeholder="Ваш номер телефона">
-                        <textarea name="quest" class="mainTextarea"
+                    <form action="php/tg.php" method="post" class="questForm">
+                        <input class="mainInput scrollCheck" data-scroll="out" type="text" name="name"
+                            placeholder="Ваше имя">
+                        <input class="mainInput scrollCheck" data-scroll="out" type="text" name="phone"
+                            placeholder="Ваш номер телефона">
+                        <textarea name="quest" class="mainTextarea scrollCheck" data-scroll="out"
                             placeholder="Какие вопросы у вас остались?"></textarea>
-                        <button class="btn btn_fill">
+                        <button class="btn btn_fill scrollCheck" data-scroll="out">
                             Отправить вопрос
                         </button>
                     </form>

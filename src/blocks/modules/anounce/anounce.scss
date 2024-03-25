@@ -81,6 +81,9 @@
 }
 
 @media(max-width:767px) {
+    #anounce {
+        padding-bottom: 75px;
+    }
     .anounceCard {
         min-height: 400px;
     }

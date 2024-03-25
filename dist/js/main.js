@@ -45,7 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var scroll_out__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scroll-out */ "./node_modules/scroll-out/lib/index.js");
+/* harmony import */ var scroll_out__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(scroll_out__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var splitting__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! splitting */ "./node_modules/splitting/dist/splitting.js");
+/* harmony import */ var splitting__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(splitting__WEBPACK_IMPORTED_MODULE_1__);
+
 
 var menu = document.querySelector(".header__list"),
   menuItem = document.querySelectorAll(".header__link"),
@@ -53,16 +61,11 @@ var menu = document.querySelector(".header__list"),
 function closeMenu() {
   hamburger.classList.remove("burger_active");
   menu.classList.remove("menu_active");
-
-  // document.querySelector('.body').classList.remove("scroll-block");
 }
 hamburger.addEventListener("click", function (event) {
   event.stopPropagation(); // Prevent click event propagation to the document
-
   hamburger.classList.toggle("burger_active");
   menu.classList.toggle("menu_active");
-
-  // document.querySelector('.body').classList.toggle("scroll-block");
 });
 menuItem.forEach(function (item) {
   item.addEventListener("click", function () {
@@ -71,9 +74,6 @@ menuItem.forEach(function (item) {
 });
 document.addEventListener('click', function (event) {
   var headerList = document.querySelector('.header__list.menu_active');
-
-  // Check if the clicked element is outside the .header__list.menu_active
-
   if (headerList && !headerList.contains(event.target)) {
     closeMenu();
   }
@@ -97,6 +97,49 @@ window.addEventListener("scroll", function () {
   scrollPrev = scrolled;
 });
 window.scrollY >= 20 ? headerTag.style.top = '0' : '';
+splitting__WEBPACK_IMPORTED_MODULE_1___default()();
+// Initialize scroll-out
+scroll_out__WEBPACK_IMPORTED_MODULE_0___default()({
+  once: true,
+  targets: '.scrollCheck',
+  // Для элементов с классом scrollCheck
+  onShown: function onShown(element) {
+    // Добавляем анимацию только для элементов с классом scrollCheck
+    element.classList.add('animate__animated', 'animate__fadeIn');
+  }
+});
+scroll_out__WEBPACK_IMPORTED_MODULE_0___default()({
+  // Для других элементов
+  once: true,
+  onShown: function onShown(element) {
+    // Добавьте здесь свою логику или оставьте пустым, если хотите использовать стандартное поведение
+  }
+});
+setTimeout(function () {
+  document.querySelectorAll("h1").forEach(function (i) {
+    i.setAttribute("data-scroll", "in");
+  });
+}, 2400);
+
+// Получаем все элементы с классом youtube-video
+var youtubeFrames = document.querySelectorAll('.youtube-video');
+
+// Создаем новый Intersection Observer для каждого элемента
+youtubeFrames.forEach(function (youtubeFrame) {
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        // Если видео попадает в зону видимости, запускаем его
+        youtubeFrame.src += '&autoplay=1';
+        // Удаляем слушателя, чтобы он не запустился снова, когда элемент выйдет из зоны видимости
+        observer.unobserve(youtubeFrame);
+      }
+    });
+  });
+
+  // Наблюдаем за каждым iframe
+  observer.observe(youtubeFrame);
+});
 
 /***/ }),
 
@@ -216,6 +259,7 @@ var swiperProducts = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]("
   },
   breakpoints: {
     1024: {
+      slidesPerGroup: 2,
       slidesPerView: 2,
       spaceBetween: 40
     }
@@ -257,7 +301,6 @@ var swiperProducts = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]("
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_sliders_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/sliders/sliders */ "./src/blocks/modules/sliders/sliders.js");
 /* harmony import */ var _modules_faq_faq__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/faq/faq */ "./src/blocks/modules/faq/faq.js");
 /* harmony import */ var _modules_faq_faq__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_faq_faq__WEBPACK_IMPORTED_MODULE_2__);
@@ -306,7 +349,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;

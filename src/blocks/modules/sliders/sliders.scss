@@ -47,11 +47,14 @@
     position: relative;
 }
 
+.swiperHowGo__btns,
 .swiperRegards__btns {
     display: none;
 }
 
 @media(max-width:1023px) {
+
+    .swiperHowGo__btns,
     .swiperRegards__btns {
         display: flex;
     }

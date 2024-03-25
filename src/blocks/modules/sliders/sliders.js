@@ -115,6 +115,7 @@ var swiperProducts = new Swiper(".swiperProducts", {
     },
     breakpoints: {
         1024: {
+            slidesPerGroup: 2,
             slidesPerView: 2,
             spaceBetween: 40,
         },

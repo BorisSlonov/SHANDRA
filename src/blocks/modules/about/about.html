@@ -1,43 +1,30 @@
 <section class="section section_about">
     <div class="about">
         <div class="container">
-            <h2 class="mainTitle">
+            <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
                 Анастасия Shandra –
             </h2>
             <div class="about__body">
-                <p class="about__item">
+                <p class="about__item  scrollCheck" data-scroll="out">
                     <span class="about__icon"></span>
                     Я основатель Бренда “Shandra Retreat” – уникальные трансформационные ретриты по всему
                     Миру
                 </p>
-                <p class="about__item">
+                <p class="about__item  scrollCheck" data-scroll="out">
                     <span class="about__icon"></span>
                     Я проводник в йогу и медитацию более 5 лет
                 </p>
-                <p class="about__item">
+                <p class="about__item  scrollCheck" data-scroll="out">
                     <span class="about__icon"></span>
                     Проводник в женские круги, Тантру и гвоздестояние
                 </p>
             </div>
-            <div class="about__video">
-                <iframe id="youtube-video"
-                    src="https://www.youtube.com/embed/9gG7MESj4dY?si=uUIFJnHr9XCbrBjS?start=1&autoplay=1&mute=1&enablejsapi=1&controls=0"
+            <div class="about__video  scrollCheck" data-scroll="out">
+                <iframe class="youtube-video"
+                    src="https://www.youtube.com/embed/9gG7MESj4dY?si=uUIFJnHr9XCbrBjS&start=1&enablejsapi=1&controls=0"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-                <script>
-                    // Получаем iframe с YouTube
-                    const youtubeFrame = document.getElementById('youtube-video');
-
-                    // Добавляем слушатель события 'ended', чтобы перезагрузить видео после завершения
-                    youtubeFrame.addEventListener('ended', function () {
-                        // Получаем текущий источник видео
-                        const currentSrc = youtubeFrame.getAttribute('src');
-
-                        // Обновляем источник видео, добавляя параметр 'loop=1' для повторного воспроизведения
-                        youtubeFrame.setAttribute('src', currentSrc + '&loop=1');
-                    });
-                </script>
             </div>
         </div>
     </div>

@@ -1,0 +1,10 @@
+.reviewsVideo {
+    iframe {
+        height: 360px;
+        width: 100%;
+
+        @media(max-width:767px) {
+            height: 300px;
+        }
+    }
+}
