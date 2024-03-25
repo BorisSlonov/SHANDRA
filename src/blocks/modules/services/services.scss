@@ -6,6 +6,8 @@
 
 .servicesCard {
     display: flex;
+    border: 1px solid #3a41436b;
+    border-radius: 10px;
 }
 
 .servicesCard__item {
@@ -79,6 +81,18 @@
 
 .servicesCard__item_img_meditationFromZero5 {
     background-image: url('../img/services/fromZero/5.webp');
+}
+
+.servicesCard__item_img_consult1 {
+    background-image: url('../img/services/consult/1.webp');
+}
+
+.servicesCard__item_img_consult2 {
+    background-image: url('../img/services/consult/2.webp');
+}
+
+.servicesCard__item_img_consult3 {
+    background-image: url('../img/services/consult/3.webp');
 }
 
 

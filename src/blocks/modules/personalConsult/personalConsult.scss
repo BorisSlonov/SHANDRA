@@ -1,0 +1,40 @@
+.sectionPersonalConsult {
+    padding: 100px 0;
+}
+
+.personalConsult {
+    .mainTitle {
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 40px;
+
+
+        @media(max-width:767px) {
+            margin-top: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+
+        @media(max-width:767px) {
+            grid-template-columns: auto;
+            gap: 20px;
+        }
+    }
+
+    &__footer {
+        margin-top: 24px;
+
+        @media(max-width:767px) {
+            margin-top: 20px;
+        }
+    }
+}

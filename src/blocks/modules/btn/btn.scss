@@ -44,6 +44,11 @@
     color: #efefef;
 }
 
+.btn_strokeLight,
+.btn_fillLight:hover {
+    opacity: .8;
+}
+
 @media(max-width:767px) {
     .btn {
         font-size: 16px;

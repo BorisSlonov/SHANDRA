@@ -20,7 +20,24 @@
                 </p>
             </div>
             <div class="about__video">
+                <iframe id="youtube-video"
+                    src="https://www.youtube.com/embed/9gG7MESj4dY?si=uUIFJnHr9XCbrBjS?start=1&autoplay=1&mute=1&enablejsapi=1&controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <script>
+                    // Получаем iframe с YouTube
+                    const youtubeFrame = document.getElementById('youtube-video');
 
+                    // Добавляем слушатель события 'ended', чтобы перезагрузить видео после завершения
+                    youtubeFrame.addEventListener('ended', function () {
+                        // Получаем текущий источник видео
+                        const currentSrc = youtubeFrame.getAttribute('src');
+
+                        // Обновляем источник видео, добавляя параметр 'loop=1' для повторного воспроизведения
+                        youtubeFrame.setAttribute('src', currentSrc + '&loop=1');
+                    });
+                </script>
             </div>
         </div>
     </div>

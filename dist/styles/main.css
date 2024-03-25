@@ -1574,6 +1574,11 @@ a {
   color: #efefef;
 }
 
+.btn_strokeLight,
+.btn_fillLight:hover {
+  opacity: 0.8;
+}
+
 .about__body {
   display: flex;
   gap: 40px;
@@ -1602,6 +1607,39 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   top: 30px;
+}
+
+.about__h3 {
+  margin-top: 60px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3a4143;
+}
+
+.about__svg {
+  width: 100%;
+  display: block;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.about__svg_mob {
+  display: none;
+}
+
+.about__video {
+  margin-top: 40px;
+}
+
+.about__video iframe {
+  width: 100%;
+  min-height: 510px;
+  border-radius: 10px;
 }
 
 .anounce__body {
@@ -1860,6 +1898,15 @@ a {
   height: 600px;
 }
 
+.fullWidth_consult {
+  padding-bottom: 600px;
+}
+
+.fullWidth_consult::before {
+  background-image: url("../img/fullWidth/consult.webp");
+  height: 600px;
+}
+
 .fullWidth_fromZero .mainTitle {
   margin-bottom: 10px;
   text-align: center !important;
@@ -1895,6 +1942,9 @@ a {
 }
 
 .numGreyCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #434343;
   padding: 34px;
   border-radius: 5px;
@@ -2015,8 +2065,16 @@ a {
   padding-bottom: 500px;
 }
 
-.sectionPage1_fromZero::after {
+.sectionPage1_consult::after {
   background-image: url("../img/1screen/fromZero.webp");
+}
+
+.sectionPage1_consult {
+  padding-bottom: 500px;
+}
+
+.sectionPage1_consult::after {
+  background-image: url("../img/1screen/consult.webp");
 }
 
 .page1__btns {
@@ -2227,6 +2285,8 @@ a {
 
 .servicesCard {
   display: flex;
+  border: 1px solid rgba(58, 65, 67, 0.4196078431);
+  border-radius: 10px;
 }
 
 .servicesCard__item {
@@ -2299,6 +2359,18 @@ a {
 
 .servicesCard__item_img_meditationFromZero5 {
   background-image: url("../img/services/fromZero/5.webp");
+}
+
+.servicesCard__item_img_consult1 {
+  background-image: url("../img/services/consult/1.webp");
+}
+
+.servicesCard__item_img_consult2 {
+  background-image: url("../img/services/consult/2.webp");
+}
+
+.servicesCard__item_img_consult3 {
+  background-image: url("../img/services/consult/3.webp");
 }
 
 .servicesCard__item_content {
@@ -2961,6 +3033,30 @@ a {
   color: #202020;
 }
 
+.sectionPersonalConsult {
+  padding: 100px 0;
+}
+
+.personalConsult .mainTitle {
+  margin-bottom: 0;
+}
+
+.personalConsult__subtitle {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.personalConsult__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.personalConsult__footer {
+  margin-top: 24px;
+}
+
 .footer {
   padding: 100px 0;
   background-color: #101010;
@@ -3087,6 +3183,10 @@ a {
   .sectionPage1_fromZero {
     padding-bottom: 400px;
   }
+
+  .sectionPage1_consult {
+    padding-bottom: 400px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -3125,12 +3225,11 @@ a {
   }
 
   .fullWidth_index {
-    padding-bottom: 190px;
+    padding-bottom: 100px;
   }
 
   .fullWidth_index::before {
     background-image: url("../img/fullWidth/index_mob.webp");
-    height: 190px;
   }
 
   .fullWidth_index2 {
@@ -3274,6 +3373,14 @@ a {
     padding: 20px;
   }
 
+  .about__svg {
+    display: none;
+  }
+
+  .about__svg_mob {
+    display: block;
+  }
+
   .about__body {
     flex-direction: column;
     gap: 20px;
@@ -3288,6 +3395,10 @@ a {
     top: 20px;
     width: 24px;
     height: 24px;
+  }
+
+  .about__video {
+    margin-top: 20px;
   }
 
   .anounceCard {
@@ -3350,6 +3461,10 @@ a {
     border-bottom-right-radius: 10px;
   }
 
+  .fullWidth::before {
+    background-attachment: scroll;
+  }
+
   .fullWidth_index {
     padding-bottom: 300px;
   }
@@ -3384,6 +3499,15 @@ a {
   .fullWidth_fromZero::before {
     height: 300px;
     background-image: url("../img/fullWidth/fromZero_mob.webp");
+  }
+
+  .fullWidth_consult {
+    padding-bottom: 300px;
+  }
+
+  .fullWidth_consult::before {
+    height: 300px;
+    background-image: url("../img/fullWidth/consult_mob.webp");
   }
 
   .fullWidth_fromZero .fullWidth__body {
@@ -3595,6 +3719,20 @@ a {
 
   .qa__body .accordion__p {
     font-size: 14px;
+  }
+
+  .personalConsult__subtitle {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  .personalConsult__body {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+
+  .personalConsult__footer {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -11,6 +11,10 @@
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
+
+    @media(max-width:767px) {
+        background-attachment: scroll;
+    }
 }
 
 .fullWidth_index .mainTitle {
@@ -19,6 +23,7 @@
 
 .fullWidth_index {
     padding-bottom: 500px;
+
     @media(max-width:767px) {
         padding-bottom: 300px;
     }
@@ -27,6 +32,7 @@
 .fullWidth_index::before {
     background-image: url('../img/fullWidth/index.webp');
     height: 500px;
+
     @media(max-width:767px) {
         height: 300px;
         background-image: url('../img/fullWidth/index_mob.webp');
@@ -35,6 +41,7 @@
 
 .fullWidth_index2 {
     padding-bottom: 800px;
+
     @media(max-width:767px) {
         padding-bottom: 400px;
     }
@@ -43,6 +50,7 @@
 .fullWidth_index2::before {
     background-image: url('../img/fullWidth/index2.webp');
     height: 800px;
+
     @media(max-width:767px) {
         height: 400px;
         background-image: url('../img/fullWidth/index2_mob.webp');
@@ -85,6 +93,25 @@
         background-image: url('../img/fullWidth/fromZero_mob.webp');
     }
 }
+
+.fullWidth_consult {
+    padding-bottom: 600px;
+
+    @media(max-width:767px) {
+        padding-bottom: 300px;
+    }
+}
+
+.fullWidth_consult::before {
+    background-image: url('../img/fullWidth/consult.webp');
+    height: 600px;
+
+    @media(max-width:767px) {
+        height: 300px;
+        background-image: url('../img/fullWidth/consult_mob.webp');
+    }
+}
+
 
 .fullWidth_fromZero {
     .mainTitle {
@@ -137,12 +164,11 @@
     }
 
     .fullWidth_index {
-        padding-bottom: 190px;
+        padding-bottom: 100px;
     }
 
     .fullWidth_index::before {
         background-image: url('../img/fullWidth/index_mob.webp');
-        height: 190px;
     }
 
     .fullWidth_index2 {

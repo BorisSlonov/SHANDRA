@@ -49,9 +49,23 @@
     }
 }
 
-.sectionPage1_fromZero::after {
+.sectionPage1_consult::after {
     background-image: url('../img/1screen/fromZero.webp');
 }
+
+
+.sectionPage1_consult {
+    padding-bottom: 500px;
+
+    @media(max-width:1230px) {
+        padding-bottom: 400px;
+    }
+}
+
+.sectionPage1_consult::after {
+    background-image: url('../img/1screen/consult.webp');
+}
+
 
 .page1__btns {
     display: flex;
