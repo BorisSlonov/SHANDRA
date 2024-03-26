@@ -22,6 +22,8 @@
 }
 
 .anounceCard {
+    position: relative;
+    overflow: hidden;
     padding: 48px;
     display: flex;
     flex-direction: column;
@@ -31,6 +33,22 @@
     text-align: center;
     color: #C9CDCA;
     min-height: 620px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 20%;
+        width: 80%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../img/anons/anonsCard.png');
+    }
+
+    @media(max-width:767px) {
+        padding: 24px;
+    }
 }
 
 .anounceCard__body {
@@ -84,6 +102,7 @@
     #anounce {
         padding-bottom: 75px;
     }
+
     .anounceCard {
         min-height: 400px;
     }

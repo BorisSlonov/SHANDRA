@@ -6132,6 +6132,8 @@ a {
 }
 
 .anounceCard {
+  position: relative;
+  overflow: hidden;
   padding: 48px;
   display: flex;
   flex-direction: column;
@@ -6141,6 +6143,18 @@ a {
   text-align: center;
   color: #C9CDCA;
   min-height: 620px;
+}
+
+.anounceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 20%;
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/anons/anonsCard.png");
 }
 
 .anounceCard__body {
@@ -7893,6 +7907,10 @@ a {
     margin-top: 20px;
   }
 
+  .anounceCard {
+    padding: 24px;
+  }
+
   #anounce {
     padding-bottom: 75px;
   }
@@ -8008,6 +8026,26 @@ a {
 
   .fullWidth_fromZero .fullWidth__body {
     margin-bottom: 40px;
+  }
+
+  .sectionPage1_index::after {
+    background-image: url("../img/1screen/index_mob.webp");
+  }
+
+  .sectionPage1_retreat::after {
+    background-image: url("../img/1screen/retreat_mob.webp");
+  }
+
+  .sectionPage1_meditation::after {
+    background-image: url("../img/1screen/meditation_mob.webp");
+  }
+
+  .sectionPage1_fromZero::after {
+    background-image: url("../img/1screen/fromZero_mob.webp");
+  }
+
+  .sectionPage1_consult::after {
+    background-image: url("../img/1screen/consult_mob.webp");
   }
 
   .prodResults__body {
@@ -8255,6 +8293,16 @@ a {
 
   .personalConsult__footer {
     margin-top: 20px;
+  }
+
+  .footer__a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 360px;
   }
 }
 

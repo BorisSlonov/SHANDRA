@@ -6,7 +6,7 @@
                 <div class="questions__item questions__item_img scrollCheck" data-scroll="out">
                 </div>
                 <div class="questions__item">
-                    <form action="php/tg.php" method="post" class="questForm">
+                    <form  onsubmit="send(event, 'php/tg.php')" class="questForm">
                         <input class="mainInput scrollCheck" data-scroll="out" type="text" name="name"
                             placeholder="Ваше имя">
                         <input class="mainInput scrollCheck" data-scroll="out" type="text" name="phone"

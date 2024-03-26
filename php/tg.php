@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Формируем параметры для POST-запроса
     $postData = array(
-        'chat_id' => '-4112767528', // Замените на имя вашего канала или группы
+        'chat_id' => '-1002039904442', // Замените на имя вашего канала или группы
         'text' => $telegramMessage
     );
 
@@ -42,9 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($httpCode == 200) {
         // The message was successfully sent
         $messageSent = true;
-        echo 'Спасибо за заявку! Свяжемся с вами в ближайшее время';
+        echo json_encode(array('success' => true));
     } else {
-        echo 'Ошибка, попробуйте еще раз';
+        false;
     }
     exit();
 }

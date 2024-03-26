@@ -18,6 +18,10 @@
 
 .sectionPage1_index::after {
     background-image: url('../img/1screen/index.webp');
+
+    @media(max-width:767px) {
+        background-image: url('../img/1screen/index_mob.webp');
+    }
 }
 
 .sectionPage1_retreat {
@@ -26,6 +30,9 @@
 
 .sectionPage1_retreat::after {
     background-image: url('../img/1screen/retreat.webp');
+    @media(max-width:767px) {
+        background-image: url('../img/1screen/retreat_mob.webp');
+    }
 }
 
 
@@ -39,6 +46,9 @@
 
 .sectionPage1_meditation::after {
     background-image: url('../img/1screen/meditation.webp');
+    @media(max-width:767px) {
+        background-image: url('../img/1screen/meditation_mob.webp');
+    }
 }
 
 
@@ -54,6 +64,9 @@
 
 .sectionPage1_fromZero::after {
     background-image: url('../img/1screen/fromZero.webp');
+    @media(max-width:767px) {
+        background-image: url('../img/1screen/fromZero_mob.webp');
+    }
 }
 
 .sectionPage1_consult {
@@ -66,6 +79,9 @@
 
 .sectionPage1_consult::after {
     background-image: url('../img/1screen/consult.webp');
+    @media(max-width:767px) {
+        background-image: url('../img/1screen/consult_mob.webp');
+    }
 }
 
 

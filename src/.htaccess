@@ -7,6 +7,8 @@ ErrorDocument 404 /404.html
     </FilesMatch>
 </IfModule>
 
+
+
 <IfModule mod_setenvif.c>
     <IfModule mod_headers.c>
         <FilesMatch "\.(gif|png|jpe?g|svg|svgz|ico|webp)$">
@@ -186,6 +188,7 @@ AddType text/vtt .vtt
     </FilesMatch>
 </IfModule>
 
+
 #If your server don't support ETags deactivate with "None" (and remove header)
 <IfModule mod_headers.c>
     Header unset ETag
@@ -203,6 +206,11 @@ AddType text/vtt .vtt
 
     # Serve WebP image instead
     RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
+
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^(.*)$ $1.html [NC,L]
 </IfModule>
 
 <IfModule mod_headers.c>
