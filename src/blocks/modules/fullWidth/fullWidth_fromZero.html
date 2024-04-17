@@ -2,21 +2,192 @@
     <div class="fullWidth fullWidth_fromZero">
         <div class="container">
             <div class="fullWidth__body">
-                <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
-                    Приобрести полный курс
+                <h2 class="mainTitle text text--turning " data-scroll="out">
+                    Результаты, которые ты получишь после курса и ежедневной практики 
                 </h2>
-                <p class="fullWidth__sign text text--turning " data-scroll="out" data-splitting="">
-                    медитация с 0
-                </p>
-                <p class="fullWidth__txt">
-                    Старт: <span class="bold">1 апреля</span>
-                </p>
-                <p class="fullWidth__txt">
-                    Стоимость: <span class="bold">199$</span>
-                </p>
-                <a class="btn btn_fill" href="#">
-                    Купить
-                </a>
+
+
+
+
+
+                <div class="credInfo">
+                    <ul class="credInfo__ul">
+                        <li class="credInfo__li">
+                            Научишься <span class="bold">правильно, результативно и глубоко медитировать </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Глубоко познаешь <span class="bold">разные техники и медитации </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Попробуете на себе разные техники и медитации и <span class="bold">выберешь свою </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Выйдешь на <span class="bold">новый уровень осознанности</span>
+                        </li>
+                        <li class="credInfo__li">
+                            Начнешь <span class="bold">отслеживать свои мысли, чувства и реакции </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Начнешь <span class="bold">замечать свои чувства</span> и мысли прежде чем принимать какое
+                            то действие 
+                        </li>
+                    </ul>
+                    <ul class="credInfo__ul">
+                        <li class="credInfo__li">
+                            Уберешь тревогу
+                        </li>
+                        <li class="credInfo__li">
+                            <span class="bold"> Перестаешь вовлекаться</span> в тревожные мысли 
+                        </li>
+                        <li class="credInfo__li">
+                            Научишься быть в <span class="bold">позиции наблюдателя</span> 
+                        </li>
+                        <li class="credInfo__li">
+                            Научится правильно управлять своим <span class="bold">вниманием </span>
+                        </li>
+                        <li class="credInfo__li">
+                            <span class="bold">Станешь более счастливой,</span> благодарной и наполненной
+                        </li>
+                        <li class="credInfo__li">
+                            Начнешь <span class="bold">по-настоящему отдыхать и расслабляться</span> во время медитации 
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+                <style>
+                    #timer {
+                        text-align: center;
+                        margin-top: 25px;
+                        margin-bottom: 10px;
+                    }
+
+                    .timer__wrapper {
+                        display: flex;
+                        gap: 40px;
+                    }
+
+                    .timer__item {
+                        width: 100px;
+                    }
+
+                    .timer__value {
+                        font-size: 42px;
+                    }
+
+                    .timer__unit {
+                        opacity: .5;
+                        font-size: 24px;
+                    }
+
+                    @media(max-width:768px) {
+                        .timer__wrapper {
+                            gap: 20px;
+                        }
+
+                        .timer__item {
+                            width: 70px;
+                        }
+
+                        .timer__value {
+                            font-size: 24px;
+                        }
+
+                        .timer__unit {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+                </head>
+
+                <body>
+
+                    <div id="timer"></div>
+
+                    <script>
+                        // Функция для расчета времени до 1 июня текущего года
+                        function getTimeUntilJune1() {
+                            const now = new Date();
+                            const june1 = new Date(now.getFullYear(), 5, 1); // Июнь - 5 месяц (индексация месяцев начинается с 0)
+
+                            // Разница между текущим временем и 1 июня в миллисекундах
+                            const difference = june1.getTime() - now.getTime();
+
+                            // Преобразование времени в дни, часы, минуты и секунды
+                            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                            return { days, hours, minutes, seconds };
+                        }
+
+                        // Функция для получения правильных склонений числительных
+                        function getNoun(number, one, two, five) {
+                            let num = Math.abs(number);
+                            num %= 100;
+                            if (num >= 5 && num <= 20) {
+                                return five;
+                            }
+                            num %= 10;
+                            if (num === 1) {
+                                return one;
+                            }
+                            if (num >= 2 && num <= 4) {
+                                return two;
+                            }
+                            return five;
+                        }
+
+                        // Функция для обновления отображения таймера
+                        function updateTimer() {
+                            const timerElement = document.getElementById('timer');
+                            const { days, hours, minutes, seconds } = getTimeUntilJune1();
+
+                            const daysText = getNoun(days, 'день', 'дня', 'дней');
+                            const hoursText = getNoun(hours, 'час', 'часа', 'часов');
+                            const minutesText = getNoun(minutes, 'минута', 'минуты', 'минут');
+                            const secondsText = getNoun(seconds, 'секунда', 'секунды', 'секунд');
+
+                            timerElement.innerHTML = `
+                            <div class="timer__wrapper">
+                                <div class="timer__item">
+                                    <div class="timer__value">${days}</div> <div class="timer__unit">${daysText}</div>                                    
+                                </div> 
+                                <div class="timer__item">
+                                
+                                    <div class="timer__value">${hours}</div> <div class="timer__unit">${hoursText}</div>
+                                
+                                </div> 
+                                <div class="timer__item">
+    <div class="timer__value">${minutes}</div> <div class="timer__unit">${minutesText}</div>
+                                
+                                </div> 
+                                <div class="timer__item">
+                                    <div class="timer__value">${seconds}</div> <div class="timer__unit">${secondsText}</div>
+                                    
+                                </div>                                
+                            </div>
+  `;
+                        }
+
+                        // Обновляем таймер каждую секунду
+                        setInterval(updateTimer, 1000);
+
+                        // Инициализация таймера при загрузке страницы
+                        updateTimer();
+                    </script>
+                    <p class="fullWidth__txt">
+                        Старт: <span class="bold">1 июня</span>
+                    </p>
+                    <!-- <p class="fullWidth__txt">
+                        Стоимость: <span class="bold">199$</span>
+                    </p>
+                    <a class="btn btn_fill" href="https://secure.wayforpay.com/button/b5f420c837fe5">
+                        Купить
+                    </a> -->
             </div>
         </div>
     </div>

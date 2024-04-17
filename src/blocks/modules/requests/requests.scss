@@ -4,6 +4,9 @@
 
 .requests__subtitle {
     text-align: center;
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .requests__body {
@@ -45,7 +48,7 @@
 }
 
 .requests__p_bold {
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 20px;
 }
 
@@ -90,7 +93,7 @@
     padding-left: 32px;
     margin-top: 16px;
 
-    
+
     @media(max-width:767px) {
         margin-top: 12px;
         padding-left: 24px;
@@ -135,7 +138,7 @@
 
     .requests__item_imgLeftIcons {
         min-height: 300px;
-        background-position: top center;
+        background-position:  center;
     }
 
     .requests__p {

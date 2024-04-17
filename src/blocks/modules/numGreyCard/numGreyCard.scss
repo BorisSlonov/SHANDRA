@@ -3,14 +3,14 @@
     justify-content: center;
     align-items: center;
     background-color: #434343;
-    padding: 34px;
+    padding: 16px 24px;
     border-radius: 5px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: #f7f7f6;
-    height: 167px;
+    height: 120px;
     display: flex;
     justify-content: center;
 }
@@ -27,8 +27,8 @@
 
 .numGreyCard__p::before {
     content: '';
-    font-size: 42px;
-    top: -20px;
+    font-size: 36px;
+    top: -15px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -83,52 +83,78 @@
 }
 
 @media(max-width:1239px) {
-    .numGreyCard {
-        height: 180px;
-    }
 
     .numGreyCard__p::before {
         font-size: 32px;
-        top: -15px;
+        top: -5px;
     }
 }
 
 @media(max-width:1023px) {
+
     .numGreyCard {
         height: 100%;
-        padding: 34px 16px;
+        padding: 20px 16px;
         font-size: 16px;
     }
 
-    .numGreyCard__p_3::before {
-        content: '2'
+    .section_products {
+        .numGreyCard__p_3::before {
+            content: '2'
+        }
+    
+        .numGreyCard__p_5::before {
+            content: '3'
+        }
+    
+        .numGreyCard__p_2::before {
+            content: '4'
+        }
+    
+        .numGreyCard__p_4::before {
+            content: '5'
+        }
+    
+        .numGreyCard__p_9::before {
+            content: '8'
+        }
+    
+        .numGreyCard__p_11::before {
+            content: '9'
+        }
+    
+        .numGreyCard__p_8::before {
+            content: '10'
+        }
+    
+        .numGreyCard__p_10::before {
+            content: '11'
+        }
     }
 
-    .numGreyCard__p_5::before {
-        content: '3'
-    }
 
-    .numGreyCard__p_2::before {
-        content: '4'
-    }
+}
 
-    .numGreyCard__p_4::before {
-        content: '5'
-    }
 
-    .numGreyCard__p_9::before {
-        content: '8'
+.personalConsult__body {
+    .numGreyCard {
+        flex-direction: column;
+        align-items: center;
     }
+}
 
-    .numGreyCard__p_11::before {
-        content: '9'
-    }
+.numGreyCard__num {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 42px;
+    text-align: center;
+    color: #f7f7f6;
 
-    .numGreyCard__p_8::before {
-        content: '10'
+    @media(max-width:767px) {
+        font-size: 28px;
     }
+}
 
-    .numGreyCard__p_10::before {
-        content: '11'
-    }
+.numGreyCard__num+.numGreyCard__p {
+    padding-top: 16px;
 }

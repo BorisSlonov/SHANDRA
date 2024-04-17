@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SHANDRA - Главная</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.min.css?v1.1">
+</head>
+
+<body>
+    <div class="app">
+        <script>
+
+    // Отправка данных на сервер
+    function send(event, php) {
+        console.log("Отправка запроса");
+        event.preventDefault
+            ? event.preventDefault()
+            : (event.returnValue = false);
+        var req = new XMLHttpRequest();
+        req.open("POST", php, true);
+        req.onload = function () {
+            if (req.status >= 200 && req.status < 400) {
+                json = JSON.parse(this.response); // Ебанный internet explorer 11
+                console.log(json);
+                console.log(req);
+                // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+                if (json.success === true) {
+                    // Если сообщение отправлено
+
+                    alert("Спасибо за заявку! Мы свяжемсы с вами в ближайшее время");
+                } else {
+                    // Если произошла ошибка
+                    alert("Ошибка. Сообщение не отправлено");
+                }
+                // Если не удалось связаться с php файлом
+            } else {
+                alert("Ошибка сервера. Номер: " + req.status);
+            }
+        };
+
+        // Если не удалось отправить запрос. Стоит блок на хостинге
+        req.onerror = function () {
+            alert("Ошибка отправки запроса");
+        };
+        req.send(new FormData(event.target));
+    }
+</script>
+
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__item">
+                <a class="header__logo" href="/">
+                </a>
+            </div>
+            <div class="header__item">
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__li">
+                            <a href="/" class="header__a">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__li">
+                            <a href="/retreat" class="header__a">
+                                Shandra retreat
+                            </a>
+                        </li>
+                        <li class="header__li">
+                            <a href="/meditation" class="header__a">
+                                Медитации
+                            </a>
+                        </li>
+                        <li class="header__li">
+                            <a href="/consultation" class="header__a">
+                                Консультация
+                                и наставничество
+                            </a>
+                        </li>
+                        <li class="header__li">
+                            <a href="/meditation-from-0" class="header__a">
+                                Курс Медитация с 0
+                            </a>
+                        </li>
+                        <li class="header__li">
+                            <a href="/contacts" class="header__a">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main section_first section_last">
+            <section class="section section_contacts">
+    <div class="contacts">
+        <div class="container">
+            <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
+                Связаться со мной
+            </h2>
+            <div class="contacts__body">
+                <div class="contacts__item contacts__item_img scrollCheck" data-scroll="out">
+
+                </div>
+                <div class="contacts__item">
+                    <div class="contactsCard">
+                        <h3 class="titleFlower contactsCard__h3">
+                            связь по ретриту
+                        </h3>
+                        <div class="contactsCard__body">
+                            <a href="https://t.me/shandraretreats" class="contactsCard__item contactsCard__item_tg scrollCheck" data-scroll="out">
+                                Telegram
+                            </a>
+                            <a href="https://www.instagram.com/shandra_retreat?igsh=dHhqeWl5NjV4cHF1" class="contactsCard__item contactsCard__item_inst scrollCheck" data-scroll="out">
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contactsCard">
+                        <h3 class="titleFlower contactsCard__h3">
+                            связаться лично
+                        </h3>
+                        <div class="contactsCard__body">
+                            <a href="https://t.me/meditationyogashandra" class="contactsCard__item contactsCard__item_tg scrollCheck" data-scroll="out">
+                                Telegram
+                            </a>
+                            <a href="https://www.instagram.com/anastasia.shandra?igsh=MXF0MGU2eG91anJxNw==" class="contactsCard__item contactsCard__item_inst scrollCheck" data-scroll="out">
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contactsCard">
+                        <h3 class="titleFlower contactsCard__h3">
+                            ДРУГИЕ КАНАЛы
+                        </h3>
+                        <div class="contactsCard__body">
+                            <a href="https://pin.it/4B5TBaWdC" class="contactsCard__item contactsCard__item_pi scrollCheck" data-scroll="out">
+                                Pinterest
+                            </a>
+                            <a href="https://youtube.com/@anastasiya.shandra?si=p9hEn4D-X9jh8OPP" class="contactsCard__item contactsCard__item_yt scrollCheck" data-scroll="out">
+                                YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+           
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <p class="shandra text text--turning " data-scroll="out" data-splitting="">SHANDRA</p>
+        <div class="footer__body scrollCheck" data-scroll="out">
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <a href="#" class="footer__a">Контактная информация</a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" class="footer__a">Договор публичной оферты</a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" class="footer__a">Правила и условия</a>
+                </li>
+                <li class="footer__li">
+                    <a class="footer__a">anastasiyashandra@gmail.com</a>
+                </li>
+            </ul>
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <a href="/" class="footer__a">SHANDRA RETREAT</a>
+                </li>
+                <li class="footer__li">
+                    <a href="/meditation" class="footer__a">Медитации</a>
+                </li>
+                <li class="footer__li">
+                    <a href="/consultation" class="footer__a">Консультации</a>
+                </li>
+                <li class="footer__li">
+                    <a href="/consultation#personal-mentor" class="footer__a">Наставничество</a>
+                </li>
+            </ul>
+            <ul class="footer__contacts">
+                <li>
+                    <a href="#" class="footer__contact footer__contact_phone"></a>
+                </li>
+                <li>
+                    <a href="#" class="footer__contact footer__contact_mail"></a>
+                </li>
+                <li>
+                    <a href="#" class="footer__contact footer__contact_tg"></a>
+                </li>
+                <li>
+                    <a href="#" class="footer__contact footer__contact_inst"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    </div>
+
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

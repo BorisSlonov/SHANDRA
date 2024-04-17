@@ -7,12 +7,23 @@
 }
 
 .anounce__item_img {
-    background-image: url(../img/anons/anonsPhoto.png);
     background-size: cover;
     background-position: 50% 50%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-left: -10px;
+    transition: background-image .3s ease-in-out;
+    background-color: #3a4143cb;
+    /* Применяем плавный переход для изменения background-image */
+}
+
+.anounce__item_img_1 {
+    background-image: url(../img/anons/anonsPhoto.png);
+    /* Фон для первого слайда */
+}
+
+.anounce__item_img_2 {
+    background-image: url(../img/anons/anonsPhoto2.png);
 }
 
 .swiperAnounce {
@@ -91,6 +102,8 @@
 }
 
 .anounceCard__footer {
+    position: relative;
+    z-index: 100;
     width: 100%;
     margin-top: auto;
     display: flex;

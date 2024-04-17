@@ -35,7 +35,7 @@
     text-align: center;
     color: #f7f7f6;
     @media(max-width:767px) {
-        margin-top: 30px;
+        margin-top: 70px;
     }
 }
 
@@ -52,24 +52,21 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     top: -60px;
-}
-
-.values__p_1::before {
-    background-image: url('../img/icons/values/1.svg');
     width: 60px;
     height: 40px;
 }
 
+.values__p_1::before {
+    background-image: url('../img/icons/values/1.svg');
+  
+}
+
 .values__p_2::before {
     background-image: url('../img/icons/values/2.svg');
-    width: 40px;
-    height: 40px;
 }
 
 .values__p_3::before {
     background-image: url('../img/icons/values/3.svg');
-    width: 40px;
-    height: 40px;
 }
 
 @media(max-width:1439px) {
@@ -89,10 +86,31 @@
         align-items: center;
     }
 
+    .values__item {
+        width: 260px;
+        height: 260px;
+    }
+
     .values__item:nth-child(2) {
         margin-left: 0;
         margin-right: 0;
         margin-top: -40px;
         margin-bottom: -40px;
+    }
+}
+
+@media(max-width:550px) {
+    .values__item {
+        width: 180px;
+        height: 180px;
+    }
+    .values__p {
+        font-size: 16px;
+        margin-top: 60px;
+    }
+    .values__p::before {
+        width: 50px;
+        height: 30px;
+        top: -40px;
     }
 }

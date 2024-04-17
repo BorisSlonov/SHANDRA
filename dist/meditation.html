@@ -7,6 +7,8 @@
     <title>SHANDRA - Медитация</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -27,8 +29,9 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.min.css?v1.1">
 </head>
 
 <body>
@@ -87,24 +90,29 @@
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/retreat.html" class="header__a">
+                            <a href="/retreat" class="header__a">
                                 Shandra retreat
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/meditation.html" class="header__a">
+                            <a href="/meditation" class="header__a">
                                 Медитации
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/consultation.html" class="header__a">
+                            <a href="/consultation" class="header__a">
                                 Консультация
                                 и наставничество
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/meditation-from-0.html" class="header__a">
+                            <a href="/meditation-from-0" class="header__a">
                                 Курс Медитация с 0
+                            </a>
+                        </li>
+                        <li class="header__li">
+                            <a href="/contacts" class="header__a">
+                                Контакты
                             </a>
                         </li>
                     </ul>
@@ -120,7 +128,6 @@
     </div>
 </header>
         <main class="main">
-
             <section class="sectionPage1 sectionPage1_meditation">
     <div class="container">
         <div class="page1">
@@ -128,8 +135,7 @@
                 meditation
             </h1>
             <div class="page1__btns scrollCheck" data-scroll="out">
-                <a href="#meditation_packages" class="btn btn_fill">Приобрести</a>
-                <a href="#meditation_for_you" class="btn btn_stroke">Узнать подробнее</a>
+                <a href="#meditation_for_you" class="btn btn_fill">Попробовать бесплатно</a>
             </div>
         </div>
     </div>
@@ -142,21 +148,21 @@
             </h2>
             <div class="meditationForYou__body">
                 <div class="meditationForYou__item scrollCheck" data-scroll="out">
-                    <img class="meditationForYou__img" src="img/icons/meditation/1.svg" alt="">
+                    <img lading="lazy"  class="meditationForYou__img" src="img/icons/meditation/1.svg" alt="">
                     <p class="meditationForYou__p">
                         Если ты начинающий и никогда
                         не занимался медитацией в своей жизни
                     </p>
                 </div>
                 <div class="meditationForYou__item scrollCheck" data-scroll="out">
-                    <img class="meditationForYou__img" src="img/icons/meditation/2.svg" alt="">
+                    <img lading="lazy"  class="meditationForYou__img" src="img/icons/meditation/2.svg" alt="">
                     <p class="meditationForYou__p">
                         Если ты уже занимался медитацией раньше, но откладываешь её в сторону, считая, что это не для
                         тебя
                     </p>
                 </div>
                 <div class="meditationForYou__item scrollCheck" data-scroll="out">
-                    <img class="meditationForYou__img" src="img/icons/meditation/3.svg" alt="">
+                    <img lading="lazy"  class="meditationForYou__img" src="img/icons/meditation/3.svg" alt="">
                     <p class="meditationForYou__p">
                         Даже если ты уже имеешь опыт в духовной сфере, здесь ты погрузишься ещё глубже
                     </p>
@@ -172,21 +178,23 @@
                 материалы:
             </h2>
             <div class="services__body">
-                <div class="services__item servicesCard  scrollCheck" data-scroll="out">
-                    <div class="servicesCard__item servicesCard__item_img servicesCard__item_img_meditation1">
+                <div class="services__item servicesCard scrollCheck animate__animated animate__fadeIn" data-scroll="in">
+                    <div class="servicesCard__item servicesCard__item_img servicesCard__item_img1">
                     </div>
                     <div class="servicesCard__item servicesCard__item_content">
                         <div class="servicesCard__txts">
-                            <h3 class="servicesCard__h3 titileFlower">
-                                Избавление от страхов и тревоги
+                            <h3 class="servicesCard__h3 titleFlower">
+                                Бесплатная медитация «Метта»
                             </h3>
                             <p class="servicesCard__p">
-                                Бесплатная медитация
+                                Эта медитация поможет вам расслабиться, открыть своё сердце, стать счастливее и
+                                наполниться любовью.
                             </p>
                         </div>
                         <div class="servicesCard__btns">
-                            <a gref="#" class="btn btn_fillLight" type="btn">
-                                Приобрести
+                            <a href="https://youtu.be/FNswCjj8fdk" target="_blank"
+                                class="btn btn_fillLight">
+                                Слушать медитацию
                             </a>
                         </div>
                     </div>
@@ -194,9 +202,9 @@
                 <div class="services__item servicesCard  scrollCheck" data-scroll="out">
                     <div class="servicesCard__item servicesCard__item_img servicesCard__item_img_meditation2">
                     </div>
-                    <div class="servicesCard__item servicesCard__item_content servicesCard__item_contentGreen">
+                    <div class="servicesCard__item servicesCard__item_content">
                         <div class="servicesCard__txts">
-                            <h3 class="servicesCard__h3 titileFlower">
+                            <h3 class="servicesCard__h3 titleFlower">
                                 Введение в медитацию
                             </h3>
                             <p class="servicesCard__p">
@@ -220,14 +228,12 @@
                                     спокойствии
                                 </li>
                             </ul>
-                            <p class="servicesCard__price">
-                                Стоимость: <span class="bold">39$</span>
-                            </p>
+
                         </div>
                         <div class="servicesCard__btns">
-                            <button class="btn btn_fillLight" type="btn">
-                                Приобрести
-                            </button>
+                            <a href="#" class="btn btn_fillLight" type="btn">
+                                Подробнее
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +245,7 @@
     <div class="fullWidth fullWidth_meditation">
         <div class="container">
             <div class="fullWidth__body">
-                <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
+                <h2 class="mainTitle text text--turning " data-scroll="out">
                     через медитацию постигается Безграничное. Познавший безграничное обретает счастье
                 </h2>
                 <p class="fullWidth__sign text text--turning " data-scroll="out" data-splitting="">
@@ -255,16 +261,17 @@
             <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
                 Пакеты медитаций:
             </h2>
-            <img class="titleMedPac titleMedPac_pc" src="img/services/meditation/titlePac.svg" alt="">
-            <img class="titleMedPac titleMedPac_mob" src="img/services/meditation/titlePac_mob.svg" alt="">
+            <img lading="lazy" class="titleMedPac titleMedPac_pc" src="img/services/meditation/titlePac.svg" alt="">
+            <img lading="lazy" class="titleMedPac titleMedPac_mob" src="img/services/meditation/titlePac_mob.svg"
+                alt="">
             <div class="services__body">
                 <div class="services__item servicesCard  scrollCheck" data-scroll="out">
                     <div class="servicesCard__item servicesCard__item_img servicesCard__item_img_meditationPac1">
                     </div>
-                    <div class="servicesCard__item servicesCard__item_content">
+                    <div class="servicesCard__item servicesCard__item_content servicesCard__item_contentGreen">
                         <div class="servicesCard__txts">
-                            <h3 class="servicesCard__h3 titileFlower">
-                                «Исцеление души и тела»
+                            <h3 class="servicesCard__h3 titleFlower">
+                                Исцеление души и тела
                             </h3>
                             <ul class="servicesCard__ul">
                                 <li class="servicesCard__li">
@@ -294,7 +301,8 @@
                             </p>
                         </div>
                         <div class="servicesCard__btns">
-                            <a gref="#" class="btn btn_fillLight" type="btn">
+                            <a href="https://secure.wayforpay.com/button/ba8b270d65d41" class="btn btn_fillLight"
+                                type="btn">
                                 Купить
                             </a>
                         </div>
@@ -305,7 +313,7 @@
                     </div>
                     <div class="servicesCard__item servicesCard__item_content servicesCard__item_contentGreen">
                         <div class="servicesCard__txts">
-                            <h3 class="servicesCard__h3 titileFlower">
+                            <h3 class="servicesCard__h3 titleFlower">
                                 Полная перезагрузка жизни
                             </h3>
                             <ul class="servicesCard__ul">
@@ -351,7 +359,8 @@
                             </p>
                         </div>
                         <div class="servicesCard__btns">
-                            <a gref="#" class="btn btn_fillLight" type="btn">
+                            <a href="https://secure.wayforpay.com/button/bd04882a6086e" class="btn btn_fillLight"
+                                type="btn">
                                 Купить
                             </a>
                         </div>
@@ -371,34 +380,204 @@
                 <div class="swiper swiperReviews_retreat">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/1.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/1.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/2.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/2.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/3.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/3.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/4.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/4.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/5.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/5.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/6.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/6.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/7.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/7.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/meditation/8.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/meditation/8.webp" alt="" class="swiperReviews__img">
                         </div>
                     </div>
                 </div>
                 <div class="swiperReviewsRetreat__btns swiperBtns">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section section_last">
+    <div class="qa">
+        <div class="container">
+            <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
+                Нас часто спрашивают
+            </h2>
+            <div class="qa__body">
+                <div class="accordion accordion_qa">
+                    <div class="accordion__item scrollCheck" data-scroll="out">
+                        <h4 class="accordion__h4">
+                            <span>
+                                Что такое медитация?
+                            </span>
+                            <div class="accordion__openner"></div>
+                        </h4>
+                        <div class="accordion__txt">
+                            <p class="accordion__p">
+                                Медитация - это духовная практика, которая помогает тренировать осознанность, менять
+                                мышление, избавляться от стресса и тревоги. Медитация - отличный инструмент для развития
+                                и соединения со своим «Высшим Я».
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item scrollCheck" data-scroll="out">
+                        <h4 class="accordion__h4">
+                            <span>
+                                Чем медитации могут мне помочь?
+                            </span>
+                            <div class="accordion__openner"></div>
+                        </h4>
+                        <div class="accordion__txt">
+                            <p class="accordion__p">
+                                Исследования показывают, что медитация снижает воспалительные процессы в мозге, тем
+                                самым уменьшая риск рака и других заболеваний. Вдобавок она способна вызывать ощущение
+                                блаженного трепета, снижать боль и защищать мозг от старения.
+                            </p>
+                            <p class="accordion__p">
+                                Медитация помогает исцелить тело, избавиться от тревоги, депрессии, бессонницы и
+                                усталости.
+                            </p>
+                            <p class="accordion__p">
+                                Также медитация помогает перепрошить свое мышление, избавиться от ложных программ, стать
+                                успешнее, богаче, проявленнее. Открыться истинному счастью и любви.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item scrollCheck" data-scroll="out">
+                        <h4 class="accordion__h4">
+                            <span>
+                                Подходят ли эти медитации для новичка?
+                            </span>
+                            <div class="accordion__openner"></div>
+                        </h4>
+                        <div class="accordion__txt">
+                            <p class="accordion__p">
+                                Данные медитации подходят как для новичков, так и для тех, кто уже давно медитирует.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item scrollCheck" data-scroll="out">
+                        <h4 class="accordion__h4">
+                            <span>
+                                Как правильно медитировать?
+                            </span>
+                            <div class="accordion__openner"></div>
+                        </h4>
+                        <div class="accordion__txt">
+                            <p class="accordion__p">
+                                ОСНОВНЫЕ ШАГИ К ПРАКТИКЕ МЕДИТАЦИИ
+                            </p>
+                            <ul class="accordion__ul">
+                                <li>
+                                    Выберите удобное место, чтобы сесть или лечь. Вы также можете медитировать на стуле
+                                    с ровными ногами. Убедитесь, что ваш позвоночник прямой, а тело расслаблено.
+                                </li>
+                                <li>
+                                    Закройте глаза и сделайте несколько глубоких вдохов. Сосредоточьтесь на своем
+                                    дыхании и его ощущениях при вдохе и выдохе.
+                                </li>
+                                <li>
+                                    Позвольте мыслям приходить и уходить, не осуждая и не привязываясь к ним. Если вы
+                                    отвлекаетесь, просто верните свое внимание к дыханию. Начните с нескольких минут
+                                    медитации и постепенно увеличивайте время, когда вам будет комфортно. Помните, что
+                                    не существует "правильного" способа медитации.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__item scrollCheck" data-scroll="out">
+                        <h4 class="accordion__h4">
+                            <span>
+                                Когда появляется эффект от медитации?
+                            </span>
+                            <div class="accordion__openner"></div>
+                        </h4>
+                        <div class="accordion__txt">
+                            <p class="accordion__p">
+                                10-20 минут регулярных ежедневных практик медитации в течении нескольких недель или
+                                месяцев дадут значительный эффект и сильно повлияют на вашу жизнь.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item scrollCheck" data-scroll="out">
+                        <h4 class="accordion__h4">
+                            <span>
+                                Кому подходят медитации?
+                            </span>
+                            <div class="accordion__openner"></div>
+                        </h4>
+                        <div class="accordion__txt">
+                            <p class="accordion__p">
+                                Медитации подходят абсолютно всем людям. Особенно тем, кто недоволен своей жизнью,
+                                считает, что его жизнь не идеальна и хочет всегда большего. Для тех, кто в гонке и
+                                пребывает в постоянном стрессе. Для тех, кто хочет развиваться и становиться лучше
+                                каждый день.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item scrollCheck" data-scroll="out">
+                        <h4 class="accordion__h4">
+                            <span>
+                                Почему медитации это важно?
+                            </span>
+                            <div class="accordion__openner"></div>
+                        </h4>
+                        <div class="accordion__txt">
+                            <p class="accordion__p">
+                                Вот основные преимущества практики медитации:
+                            </p>
+                            <ul class="accordion__ul">
+                                <li>
+                                    Снижение уровня стресса: Доказано, что медитация снижает реакцию организма на
+                                    стресс, что приводит к снижению уровня стресса.
+                                </li>
+                                <li>
+                                    Облегчение тревоги: Медитация может помочь успокоить и сосредоточить ум, что может
+                                    принести облегчение от беспокойства и тревоги.
+                                </li>
+                                <li>
+                                    Уменьшение боли: Доказано, что медитация уменьшает боль, отвлекаясь и
+                                    сосредотачиваясь на дыхании.
+                                </li>
+                                <li>
+                                    Повышение уровня энергии: Медитация также может помочь повысить уровень энергии за
+                                    счет улучшения сосредоточенности и концентрации.
+                                </li>
+                                <li>
+                                    Улучшение сна: Практика медитации помогает улучшить
+                                    <a class="accordion__a" href="https://www.anahana.com/ru/physical-health/sleep-hygiene?hsLang=ru"
+                                        target="_blank">
+                                        качество и количество сна.
+                                    </a>
+                                </li>
+                                <li>
+                                    Улучшение самочувствия: Медитация повышает положительные эмоциональные реакции и
+                                    общий уровень удовлетворенности жизнью.
+                                </li>
+                                <li>
+                                    Более сильная иммунная система: Доказано, что медитация способствует укреплению
+                                    иммунной системы за счет снижения уровня стресса. Реакция иммунной системы на
+                                    практику медитации аналогична реакции организма на расслабление и смех.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -444,21 +623,21 @@
                     <a href="#" class="footer__a">Правила и условия</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">anastasiyashandra@gmail.com</a>
+                    <a class="footer__a">anastasiyashandra@gmail.com</a>
                 </li>
             </ul>
             <ul class="footer__ul">
                 <li class="footer__li">
-                    <a href="#" class="footer__a">SHANDRA RETREAT</a>
+                    <a href="/" class="footer__a">SHANDRA RETREAT</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">Медитации</a>
+                    <a href="/meditation" class="footer__a">Медитации</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">Консультации</a>
+                    <a href="/consultation" class="footer__a">Консультации</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">Наставничество</a>
+                    <a href="/consultation#personal-mentor" class="footer__a">Наставничество</a>
                 </li>
             </ul>
             <ul class="footer__contacts">
@@ -480,15 +659,12 @@
 </footer>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
-        new WOW().init();
         document.documentElement.style.setProperty('--animate-duration', '1.5s');
     </script>
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

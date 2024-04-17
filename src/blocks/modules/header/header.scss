@@ -128,8 +128,8 @@
 
 @media(max-width:1240px) {
     .header__logo {
-        width: 100px;
-        height: 30px;
+        width: 140px;
+        height: 40px;
     }
 }
 
@@ -201,6 +201,8 @@
 
 .header__burger {
     display: block;
+    width: 48px;
+    height: 48px;
     position: relative;
     z-index: 10001;
 }

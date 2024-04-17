@@ -75,6 +75,34 @@
         color: var(--pink);
     }
 
+    .accordion__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+
+        li {
+            position: relative;
+            padding-left: 16px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 6px;
+                width: 4px;
+                height: 4px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .accordion__a {
+        color: #fff;
+        border-bottom: 1px solid #ffffff63;
+    }
+
     .accordion__h3 {
         font-size: 30px;
         margin-bottom: 15px;

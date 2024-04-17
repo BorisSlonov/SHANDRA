@@ -32,6 +32,8 @@
 }
 
 .swiperSlideImgWrapper img {
+    width: 320px;
+    height: 320px;
     display: block;
     width: 100%;
     max-width: fit-content;
@@ -47,14 +49,12 @@
     position: relative;
 }
 
-.swiperHowGo__btns,
 .swiperRegards__btns {
     display: none;
 }
 
 @media(max-width:1023px) {
 
-    .swiperHowGo__btns,
     .swiperRegards__btns {
         display: flex;
     }

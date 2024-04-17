@@ -47,7 +47,26 @@ var swiperAnounce = new Swiper(".swiperAnounce", {
         nextEl: ".swiperAnounce__btns .swiper-button-next",
         prevEl: ".swiperAnounce__btns .swiper-button-prev",
     },
+    on: {
+        slideChange: function () {
+            var img = document.querySelector('.anounce__item_img');
+            var currentSlide = swiperAnounce.activeIndex;
+
+            if (img) {
+                if (currentSlide === 0) {
+                    img.classList.replace('anounce__item_img_2', 'anounce__item_img_1');
+                } else if (currentSlide === 1) {
+                    img.classList.replace('anounce__item_img_1', 'anounce__item_img_2');
+                }
+            } else {
+                console.error("Image element not found");
+            }
+        },
+    },
 });
+
+
+
 
 var swiperReviewsVideo = new Swiper(".swiperReviewsVideo", {
     autoHeight: true,
@@ -109,6 +128,7 @@ var swiperRegards = new Swiper(".swiperRegards", {
 var swiperProducts = new Swiper(".swiperProducts", {
     autoHeight: true,
     slidesPerView: 1,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".swiperProducts__btns .swiper-button-next",
         prevEl: ".swiperProducts__btns .swiper-button-prev",
@@ -123,9 +143,10 @@ var swiperProducts = new Swiper(".swiperProducts", {
 });
 
 
-var swiperProducts = new Swiper(".swiperHowGo", {
+var swiperHowGo = new Swiper(".swiperHowGo", {
     autoHeight: true,
     slidesPerView: 1,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".swiperHowGo__btns .swiper-button-next",
         prevEl: ".swiperHowGo__btns .swiper-button-prev",

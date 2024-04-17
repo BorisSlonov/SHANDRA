@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/github/license/andreyalexeich/gulp-scss-starter)
 ![GitHub stars](https://img.shields.io/github/stars/andreyalexeich/gulp-scss-starter.svg?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/andreyalexeich/gulp-scss-starter.svg?style=social)<br>
-<a href="https://t.me/andrewalexeich"><img src="https://img.shields.io/badge/Donate%20to%20me%20(Telegram%20TON)-UQC5GESVoOmFKJ8Khw8wwGIM3stCsnrXRHDcdfHvVjwR4ddL-blue?style=for-the-badge"></a>
+<a href="https://t.me/andrewalexeich"><img lading="lazy"  src="https://img.shields.io/badge/Donate%20to%20me%20(Telegram%20TON)-UQC5GESVoOmFKJ8Khw8wwGIM3stCsnrXRHDcdfHvVjwR4ddL-blue?style=for-the-badge"></a>
 
 ## :fire: Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)

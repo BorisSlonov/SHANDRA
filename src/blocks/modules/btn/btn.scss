@@ -8,6 +8,17 @@
     font-size: 20px;
     text-align: center;
     cursor: pointer;
+
+    @media(max-width:1023px) {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+
+    @media(max-width:767px) {
+        font-size: 16px;
+        padding: 16px;
+    }
 }
 
 .btn_fill {
@@ -47,11 +58,4 @@
 .btn_strokeLight,
 .btn_fillLight:hover {
     opacity: .8;
-}
-
-@media(max-width:767px) {
-    .btn {
-        font-size: 16px;
-        padding: 20px;
-    }
 }

@@ -7,6 +7,8 @@
     <title>SHANDRA - Медитация с 0</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -28,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.min.css?v1.1">
 </head>
 
 <body>
@@ -87,24 +89,29 @@
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/retreat.html" class="header__a">
+                            <a href="/retreat" class="header__a">
                                 Shandra retreat
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/meditation.html" class="header__a">
+                            <a href="/meditation" class="header__a">
                                 Медитации
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/consultation.html" class="header__a">
+                            <a href="/consultation" class="header__a">
                                 Консультация
                                 и наставничество
                             </a>
                         </li>
                         <li class="header__li">
-                            <a href="/meditation-from-0.html" class="header__a">
+                            <a href="/meditation-from-0" class="header__a">
                                 Курс Медитация с 0
+                            </a>
+                        </li>
+                        <li class="header__li">
+                            <a href="/contacts" class="header__a">
+                                Контакты
                             </a>
                         </li>
                     </ul>
@@ -124,10 +131,11 @@
     <div class="container">
         <div class="page1">
             <h1 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
-                Курс «Медитация с 0»
+                Курс <span style="white-space: nowrap;">«Медитация с 0»</span>
+
             </h1>
             <div class="page1__btns scrollCheck" data-scroll="out">
-                <a href="#all_in_one" class="btn btn_fill">Приобрести</a>
+                <a href="#lineup" class="btn btn_fill">Подробнее</a>
             </div>
         </div>
     </div>
@@ -171,7 +179,7 @@
                         МОДУЛЬ: Работа над ошибками
                     </p>
                 </div>
-                <div class="prodResults__item greenCard scrollCheck" data-scroll="out">
+                <div class="prodResults__item prodResults__item_last greenCard scrollCheck"  data-scroll="out">
                     <span class="greenCard__num">
                         5
                     </span>
@@ -179,19 +187,11 @@
                         МОДУЛЬ: Чакры
                     </p>
                 </div>
-                <div class="prodResults__item greenCard greenCard_fromZeroCard">
-                    <span class="greenCard__num" style="opacity: 0;">
-                        6
-                    </span>
-                    <p class="greenCard__p" style="opacity: 0;">
-                        Открытое сердце и любовь внутри
-                    </p>
-                </div>
             </div>
         </div>
     </div>
 </section> 
-            <section class="section section_services">
+            <section id="lineup" class="section section_services">
     <div class="services">
         <div class="container">
             <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
@@ -205,25 +205,51 @@
                     <div class="servicesCard__item servicesCard__item_content">
                         <div class="servicesCard__txts">
                             <h3 class="servicesCard__h3">
-                                Модуль 1: азы медитации
+                                ШАГ 1: С чего начать медитацию? 
                             </h3>
+                            <h4 class="servicesCard__h4">
+                                Результат:
+                            </h4>
                             <ul class="servicesCard__ul">
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Теория: История возникновения практики Медитации.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Выстроишь контакт со своим телом. 
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Практика: Позы для медитации.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Начнешь управлять вниманием.
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Медитация: Сканирование тела
-                                    и дыхания.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Познаешь контакт с подсознанием. 
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Первая ступень в познании практики медитации:
-                                    Вы научитесь правильно применять практику медитации и сможете управлять своей
-                                    концентрацией.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Наладишь связь между умом и телом.
                                 </li>
                             </ul>
+                            <div class="servicesCard__theory">
+                                <h4 class="servicesCard__h4">
+                                    Теория:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        История возникновения практики Медитации.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Практика:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Позы для медитации.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Медитация:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Сканирование тела и дыхания.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,24 +260,49 @@
                     <div class="servicesCard__item servicesCard__item_content servicesCard__item_contentGreen">
                         <div class="servicesCard__txts">
                             <h3 class="servicesCard__h3">
-                                Модуль 2: Польза медитации
+                                ШАГ 2: Как медитация изменить твою жизнь?
                             </h3>
+                            <h4 class="servicesCard__h4">
+                                Результат:
+                            </h4>
                             <ul class="servicesCard__ul">
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Теория: Как применять практику медитацию в повседневной жизни и как это может
-                                    улучшить вашу жизнь.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Улучшишь эмоциональное состояние.
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Практика: Йога. Работа с телом и почему это важно.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Избавишься от обид, негативного прошлого опыта и плохих воспоминаний.
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Медитация: Открытое сердце
-                                </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Вторая ступень в познании практики медитации: Вы достигнете баланса через улучшение
-                                    своего эмоционального состояния с помощью практики медитации.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Наполнишься энергией любви.
                                 </li>
                             </ul>
+                            <div class="servicesCard__theory">
+                                <h4 class="servicesCard__h4">
+                                    Теория:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Как применять практику медитацию в повседневной жизни и как это может улучшить
+                                        вашу жизнь.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Практика:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Йога. Работа с телом и почему это важно.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Медитация:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Открытое сердце
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -262,28 +313,54 @@
                     <div class="servicesCard__item servicesCard__item_content">
                         <div class="servicesCard__txts">
                             <h3 class="servicesCard__h3">
-                                Модуль 3: Техники медитации
+                                ШАГ 3: Какие есть техники медитации?
                             </h3>
+                            <h4 class="servicesCard__h4">
+                                Результат:
+                            </h4>
                             <ul class="servicesCard__ul">
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Теория: Какие бывают виды
-                                    и техники медитации.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Научишься замечать хорошее. 
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Практика: Йога. Работа с телом и почему это важно.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Избавишься от тревоги, страхов и суеты.
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Практика: Тест разных видов медитации на себе.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Научишься ценить то что у вас есть. 
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Медитация: Благодарности.
-                                </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Третья ступень в познании практики медитации: Вы попробуете на себе разные техники
-                                    медитации
-                                    и поймете, что лучше работает для вас.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Наладишь связь между умом и телом.
                                 </li>
                             </ul>
+                            <div class="servicesCard__theory">
+                                <h4 class="servicesCard__h4">
+                                    Теория:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Какие бывают виды и техники медитации.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Практика:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Йога любовь к себе через тело
+                                    </li>
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Тест разных видов медитации на себе.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Медитация:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Благодарности
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -294,25 +371,48 @@
                     <div class="servicesCard__item servicesCard__item_content servicesCard__item_contentGreen">
                         <div class="servicesCard__txts">
                             <h3 class="servicesCard__h3">
-                                Модуль 4: Работа над ошибками
+                                Какие могут быть сложности в медитации?
                             </h3>
+                            <h4 class="servicesCard__h4">
+                                Результат:
+                            </h4>
                             <ul class="servicesCard__ul">
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Теория: Работа с дисциплиной
-                                    и сложностями во время медитации.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Начнешь управлять своим фокусом вниманием, мыслями и чувствованием  
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Практика: Дыхательные практики перед медитацией
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Начнешь замечать свои негативные мысли, страхи и тревогу 
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Медитация: Осознанности
-                                </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Четвертая ступень в познании практики медитации: Вы сможете легче практиковать
-                                    медитацию и для вас это станет приятной рутиной, которая будет помогать управлять
-                                    своим состоянием.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Станешь управлять состоянием 
                                 </li>
                             </ul>
+                            <div class="servicesCard__theory">
+                                <h4 class="servicesCard__h4">
+                                    Теория:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Работа с дисциплиной и сложностями во время медитации.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Практика:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Дыхательные практики перед медитацией
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Медитация:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Осознанности
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,25 +423,54 @@
                     <div class="servicesCard__item servicesCard__item_content">
                         <div class="servicesCard__txts">
                             <h3 class="servicesCard__h3">
-                                Модуль 5: Чакры
+                                Как управлять своей реальность? 
                             </h3>
+                            <h4 class="servicesCard__h4">
+                                Техники манифестации и визуализация и реализация желаний.
+                            </h4>
+                            <h4 class="servicesCard__h4">
+                                Результат:
+                            </h4>
                             <ul class="servicesCard__ul">
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Теория: Как открыть свои чакры
-                                    и увеличить свой объём энергии.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Начнешь достигать желаемого.
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Практика: Работа с чакрами.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Быстрее воплощать свои мечты в реальность и приходить к цели. 
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Медитация: Гармонизация 7ми чакр.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Делать из желания материальное. 
                                 </li>
-                                <li class="servicesCard__liTitleFlower titileFlower">
-                                    Пятая ступень в познании практики медитации: Вы научитесь чувствовать свое тело и
-                                    управлять своей энергией. Работа с чакрами поможет открыть свой потенциал на
-                                    максимум.
+                                <li class="servicesCard__liTitleFlower titleFlower">
+                                    Начнешь создавать свою жизнь мечты. 
                                 </li>
                             </ul>
+                            <div class="servicesCard__theory">
+                                <h4 class="servicesCard__h4">
+                                    Теория:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Как воплощать свои мечты в реальность и правильно визуализировать.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Практика:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Как поднять свой уровень энергии или РАСШИРЕНИЕ ЭНЕРГИИ.
+                                    </li>
+                                </ul>
+                                <h4 class="servicesCard__h4">
+                                    Медитация:
+                                </h4>
+                                <ul class="servicesCard__ul">
+                                    <li class="servicesCard__liTitleFlower titleFlower">
+                                        Гармонизация 7ми чакр.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -353,21 +482,192 @@
     <div class="fullWidth fullWidth_fromZero">
         <div class="container">
             <div class="fullWidth__body">
-                <h2 class="mainTitle text text--turning " data-scroll="out" data-splitting="">
-                    Приобрести полный курс
+                <h2 class="mainTitle text text--turning " data-scroll="out">
+                    Результаты, которые ты получишь после курса и ежедневной практики 
                 </h2>
-                <p class="fullWidth__sign text text--turning " data-scroll="out" data-splitting="">
-                    медитация с 0
-                </p>
-                <p class="fullWidth__txt">
-                    Старт: <span class="bold">1 апреля</span>
-                </p>
-                <p class="fullWidth__txt">
-                    Стоимость: <span class="bold">199$</span>
-                </p>
-                <a class="btn btn_fill" href="#">
-                    Купить
-                </a>
+
+
+
+
+
+                <div class="credInfo">
+                    <ul class="credInfo__ul">
+                        <li class="credInfo__li">
+                            Научишься <span class="bold">правильно, результативно и глубоко медитировать </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Глубоко познаешь <span class="bold">разные техники и медитации </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Попробуете на себе разные техники и медитации и <span class="bold">выберешь свою </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Выйдешь на <span class="bold">новый уровень осознанности</span>
+                        </li>
+                        <li class="credInfo__li">
+                            Начнешь <span class="bold">отслеживать свои мысли, чувства и реакции </span>
+                        </li>
+                        <li class="credInfo__li">
+                            Начнешь <span class="bold">замечать свои чувства</span> и мысли прежде чем принимать какое
+                            то действие 
+                        </li>
+                    </ul>
+                    <ul class="credInfo__ul">
+                        <li class="credInfo__li">
+                            Уберешь тревогу
+                        </li>
+                        <li class="credInfo__li">
+                            <span class="bold"> Перестаешь вовлекаться</span> в тревожные мысли 
+                        </li>
+                        <li class="credInfo__li">
+                            Научишься быть в <span class="bold">позиции наблюдателя</span> 
+                        </li>
+                        <li class="credInfo__li">
+                            Научится правильно управлять своим <span class="bold">вниманием </span>
+                        </li>
+                        <li class="credInfo__li">
+                            <span class="bold">Станешь более счастливой,</span> благодарной и наполненной
+                        </li>
+                        <li class="credInfo__li">
+                            Начнешь <span class="bold">по-настоящему отдыхать и расслабляться</span> во время медитации 
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+                <style>
+                    #timer {
+                        text-align: center;
+                        margin-top: 25px;
+                        margin-bottom: 10px;
+                    }
+
+                    .timer__wrapper {
+                        display: flex;
+                        gap: 40px;
+                    }
+
+                    .timer__item {
+                        width: 100px;
+                    }
+
+                    .timer__value {
+                        font-size: 42px;
+                    }
+
+                    .timer__unit {
+                        opacity: .5;
+                        font-size: 24px;
+                    }
+
+                    @media(max-width:768px) {
+                        .timer__wrapper {
+                            gap: 20px;
+                        }
+
+                        .timer__item {
+                            width: 70px;
+                        }
+
+                        .timer__value {
+                            font-size: 24px;
+                        }
+
+                        .timer__unit {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+                </head>
+
+                <body>
+
+                    <div id="timer"></div>
+
+                    <script>
+                        // Функция для расчета времени до 1 июня текущего года
+                        function getTimeUntilJune1() {
+                            const now = new Date();
+                            const june1 = new Date(now.getFullYear(), 5, 1); // Июнь - 5 месяц (индексация месяцев начинается с 0)
+
+                            // Разница между текущим временем и 1 июня в миллисекундах
+                            const difference = june1.getTime() - now.getTime();
+
+                            // Преобразование времени в дни, часы, минуты и секунды
+                            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                            return { days, hours, minutes, seconds };
+                        }
+
+                        // Функция для получения правильных склонений числительных
+                        function getNoun(number, one, two, five) {
+                            let num = Math.abs(number);
+                            num %= 100;
+                            if (num >= 5 && num <= 20) {
+                                return five;
+                            }
+                            num %= 10;
+                            if (num === 1) {
+                                return one;
+                            }
+                            if (num >= 2 && num <= 4) {
+                                return two;
+                            }
+                            return five;
+                        }
+
+                        // Функция для обновления отображения таймера
+                        function updateTimer() {
+                            const timerElement = document.getElementById('timer');
+                            const { days, hours, minutes, seconds } = getTimeUntilJune1();
+
+                            const daysText = getNoun(days, 'день', 'дня', 'дней');
+                            const hoursText = getNoun(hours, 'час', 'часа', 'часов');
+                            const minutesText = getNoun(minutes, 'минута', 'минуты', 'минут');
+                            const secondsText = getNoun(seconds, 'секунда', 'секунды', 'секунд');
+
+                            timerElement.innerHTML = `
+                            <div class="timer__wrapper">
+                                <div class="timer__item">
+                                    <div class="timer__value">${days}</div> <div class="timer__unit">${daysText}</div>                                    
+                                </div> 
+                                <div class="timer__item">
+                                
+                                    <div class="timer__value">${hours}</div> <div class="timer__unit">${hoursText}</div>
+                                
+                                </div> 
+                                <div class="timer__item">
+    <div class="timer__value">${minutes}</div> <div class="timer__unit">${minutesText}</div>
+                                
+                                </div> 
+                                <div class="timer__item">
+                                    <div class="timer__value">${seconds}</div> <div class="timer__unit">${secondsText}</div>
+                                    
+                                </div>                                
+                            </div>
+  `;
+                        }
+
+                        // Обновляем таймер каждую секунду
+                        setInterval(updateTimer, 1000);
+
+                        // Инициализация таймера при загрузке страницы
+                        updateTimer();
+                    </script>
+                    <p class="fullWidth__txt">
+                        Старт: <span class="bold">1 июня</span>
+                    </p>
+                    <!-- <p class="fullWidth__txt">
+                        Стоимость: <span class="bold">199$</span>
+                    </p>
+                    <a class="btn btn_fill" href="https://secure.wayforpay.com/button/b5f420c837fe5">
+                        Купить
+                    </a> -->
             </div>
         </div>
     </div>
@@ -382,28 +682,28 @@
                 <div class="swiper swiperReviews_retreat">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/1.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/1.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/2.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/2.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/3.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/3.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/4.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/4.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/5.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/5.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/6.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/6.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/7.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/7.webp" alt="" class="swiperReviews__img">
                         </div>
                         <div class="swiper-slide swiperSlideImgWrapper">
-                            <img src="img/reviews/fromZero/8.webp" alt="" class="swiperReviews__img">
+                            <img lading="lazy"  src="img/reviews/fromZero/8.webp" alt="" class="swiperReviews__img">
                         </div>
                     </div>
                 </div>
@@ -455,21 +755,21 @@
                     <a href="#" class="footer__a">Правила и условия</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">anastasiyashandra@gmail.com</a>
+                    <a class="footer__a">anastasiyashandra@gmail.com</a>
                 </li>
             </ul>
             <ul class="footer__ul">
                 <li class="footer__li">
-                    <a href="#" class="footer__a">SHANDRA RETREAT</a>
+                    <a href="/" class="footer__a">SHANDRA RETREAT</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">Медитации</a>
+                    <a href="/meditation" class="footer__a">Медитации</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">Консультации</a>
+                    <a href="/consultation" class="footer__a">Консультации</a>
                 </li>
                 <li class="footer__li">
-                    <a href="#" class="footer__a">Наставничество</a>
+                    <a href="/consultation#personal-mentor" class="footer__a">Наставничество</a>
                 </li>
             </ul>
             <ul class="footer__contacts">
@@ -491,15 +791,13 @@
 </footer>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
-        new WOW().init();
+        
         document.documentElement.style.setProperty('--animate-duration', '1.5s');
     </script>
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

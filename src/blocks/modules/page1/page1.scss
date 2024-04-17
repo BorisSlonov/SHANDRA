@@ -3,6 +3,19 @@
     padding-top: 175px;
     padding-bottom: 700px;
 
+    @media(max-width:1440px) {
+        padding-bottom: 440px;
+    }
+
+    &_index {
+        @media(max-width:1440px) {
+            padding-bottom: 600px;
+        }
+        @media(max-width:767px) {
+            padding-bottom: 400px;
+        }
+    }
+
 }
 
 .sectionPage1::after {
@@ -11,13 +24,26 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 730px;
+    height: 60%;
     background-size: cover;
     background-position: 50% 50%;
+
+    @media(max-width:1439px) {
+        height: 50%;
+    }
+
+    @media(max-width:767px) {
+        height: 100%;
+    }
 }
 
 .sectionPage1_index::after {
     background-image: url('../img/1screen/index.webp');
+    height: 100%;
+
+    @media(max-width:1439px) {
+        height: 100%;
+    }
 
     @media(max-width:767px) {
         background-image: url('../img/1screen/index_mob.webp');
@@ -30,6 +56,7 @@
 
 .sectionPage1_retreat::after {
     background-image: url('../img/1screen/retreat.webp');
+
     @media(max-width:767px) {
         background-image: url('../img/1screen/retreat_mob.webp');
     }
@@ -46,8 +73,10 @@
 
 .sectionPage1_meditation::after {
     background-image: url('../img/1screen/meditation.webp');
+
     @media(max-width:767px) {
         background-image: url('../img/1screen/meditation_mob.webp');
+        background-size: cover;
     }
 }
 
@@ -64,6 +93,7 @@
 
 .sectionPage1_fromZero::after {
     background-image: url('../img/1screen/fromZero.webp');
+
     @media(max-width:767px) {
         background-image: url('../img/1screen/fromZero_mob.webp');
     }
@@ -79,6 +109,7 @@
 
 .sectionPage1_consult::after {
     background-image: url('../img/1screen/consult.webp');
+
     @media(max-width:767px) {
         background-image: url('../img/1screen/consult_mob.webp');
     }
@@ -96,10 +127,4 @@
     position: relative;
 
     z-index: 10;
-}
-
-@media(max-width:1440px) {
-    .sectionPage1 {
-        padding-bottom: 600px;
-    }
 }
